@@ -1,0 +1,30 @@
+#! /usr/bin/env bash
+
+#Description: This script will check whether it is file or directory on given path
+
+read -p "Enter location: " location
+
+for obj in $location/*
+
+do
+	
+if [ -d $obj ]
+
+
+	then
+
+	echo $obj is a folder
+
+
+	elif [ -f "$obj" ]
+
+
+	then
+
+ 	echo $obj is a file
+
+
+fi
+
+
+done
